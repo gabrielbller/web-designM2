@@ -1,0 +1,159 @@
+.secao-portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+.secao-portfolio__wrapper {
+  overflow: hidden;
+  height: 90%;
+}
+
+.secao-portfolio__conteudo {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.secao-portfolio__cabecalho {
+  position: relative;
+  gap: 0.4rem;
+}
+
+.secao-portfolio__paginas {
+  display: flex;
+  flex-direction: row;
+  width: 300%;
+}
+
+.secao-portfolio__pagina {
+  width: 80vw;
+  position: relative;
+  left: 0%;
+  transition: all 0.4s;
+}
+
+.secao-portfolio__grid {
+  width: 100%;
+  box-sizing: border-box;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  align-self: center;
+  padding-block: 1rem;
+}
+
+.secao-portfolio__overlay {
+  background-color: #00abf0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  backdrop-filter: blur(5px);
+}
+
+.overlay__icone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: fit-content;
+  color: #00abf0;
+  background-color: #2b2a2a;
+  border-radius: 15px;
+  font-size: clamp(2rem, 3.2rem, 3.2vw);
+  padding: 1rem;
+}
+
+.secao-portfolio__foto {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+.secao-portfolio__botao {
+  position: relative;
+  box-sizing: border-box;
+  padding-inline: 3rem;
+  padding-block: 0.8rem;
+  border-radius: 10px;
+  font-size: clamp(1rem, 1.5rem, 1.5vw);
+}
+
+.secao-portfolio__botao {
+    font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+    color: #081b29;
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #00abf0;
+    border: 2px solid #00abf0;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+
+.secao-portfolio__botao label {
+  color: #081b29;
+  font-style: bold;
+}
+
+.secao-portfolio__botao label:hover {
+  color: #00abf0;
+}
+
+.secao-portfolio__botao label:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.secao-portfolio__botao label:nth-child(2):hover {
+  color: #081b29;
+}
+
+.secao-portfolio__botao label:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.secao-portfolio__botao label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.secao-portfolio__botao label:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 1300px) and (orientation: portrait) {
+  .secao-portfolio__pagina {
+    width: 90vw;
+  }
+
+  .secao-portfolio__grid {
+    width: 100%;
+    grid-template-columns: none;
+    grid-auto-flow: column;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+  }
+
+  .secao-portfolio__grid-item {
+    min-width: 60vw;
+  }
+
+  .secao-portfolio__header {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .secao-portfolio__botao {
+    margin-top: 1rem;
+  }
+}

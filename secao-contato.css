@@ -1,0 +1,215 @@
+.secao-contato {
+    display: flex;
+    flex-direction: column;
+}
+
+.secao-contato__wrapper {
+    display: inherit;
+    flex-direction: inherit;
+}
+
+.secao-contato__conteudo {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.secao-contato__informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.secao-contato__lista-contatos {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 1.5rem, 1.5vw);
+}
+
+.secao-contato__contato {
+    display: flex;
+    flex-direction: row;
+}
+
+.contato__icone {
+    display: flex;
+    font-size: clamp(1rem, 2rem, 2vw);
+    background-color: #00abf0;
+    width: clamp(1.5rem, 3rem, 3vw);
+    height: clamp(1.5rem, 3rem, 3vw);
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.contato__texto {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-size: clamp(1rem, 1.2rem, 1.2vw);
+    font-weight: lighter;
+    padding-left: 0.5rem;
+}
+
+.secao-contato__contato > a {
+    text-transform: none;
+    color: black;
+}
+
+.contato__texto > a {
+    text-transform: none;
+    color: white;
+    font-weight: bold;
+}
+
+.secao-contato__lista-redes-sociais {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.secao-contato__rede-social {
+    display: flex;
+    font-size: clamp(1rem, 2rem, 2vw);
+    background-color: #2B2A2A;
+    color: white;
+    width: clamp(1.5rem, 3rem, 3vw);
+    height: clamp(1.5rem, 3rem, 3vw);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s;
+}
+
+.secao-contato__rede-social:hover {
+    transition: 0.2s;
+    background-color: #00abf0;
+    color: black;
+}
+
+.secao-contato__formulario {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+}
+
+.formulario__lista-itens {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formulario__item {
+    outline: none;
+    border: 0.15rem solid #CDCDCD;
+    border-radius: 10px;
+    background-color: #2B2A2A;
+    font-size: clamp(1rem, 1.3rem, 1.3vw);
+    padding: 0.8rem 0.8rem;
+}
+
+.formulario__item:hover, :focus {
+    border-color: #00abf0;
+    transition: 0.1s;
+}
+
+.formulario__mensagem {
+    height: 12rem;
+    resize: none;
+}
+
+.formulario__botao {
+    padding-block: 1rem;
+    padding-inline: 2rem;
+    margin-top: 3rem;
+    border-radius: 15px;
+    font-size: clamp(1rem, 1.5rem, 1.5vw);
+    text-align: center;
+    text-transform: uppercase;
+    align-self: flex-end;
+}
+
+.formulario__botao--enabled:hover {
+    background-color: #00abf0;
+    color: whitesmoke;
+    transition: 0.2s;
+    padding-inline: 3rem;
+}
+
+.formulario__botao--disabled {
+    background-color: #CDCDCD;
+}
+
+.formulario__toast {
+    position: fixed;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%, 0);
+    background-color: #00abf0;
+    color: white;
+    z-index: 1;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 15px;
+    filter: drop-shadow(0.3rem 0.3rem 1rem rgba(81, 63, 245, 0.4));
+    visibility: hidden;
+}
+
+.formulario__toast--show {
+    visibility: visible;
+    animation: fade-in 0.5s, fade-out 0.5s 3.5s;
+}
+
+@keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@media (max-width: 1300px) and (orientation: portrait) {
+    .secao-contato__conteudo {
+        flex-direction: column;
+    }
+
+    .secao-contato__informacao {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .contato__icone {
+        font-size: clamp(2rem, 4rem, 4vw);
+        width: clamp(1.5rem, 6rem, 6vh);
+        height: clamp(1.5rem, 6rem, 6vh);
+    }
+
+    .contato__texto {
+        font-size: clamp(1.2rem, 2rem, 2vh);
+    }
+
+    .secao-contato__lista-redes-sociais {
+        flex-direction: column;
+        width: auto;
+    }
+
+    .secao-contato__rede-social {
+        font-size: clamp(2rem, 4rem, 4vw);
+        width: clamp(1.5rem, 6rem, 6vh);
+        height: clamp(1.5rem, 6rem, 6vh);
+    }
+
+    .secao-contato__formulario {
+        width: 100%;
+        margin-top: 5rem;
+    }
+
+    .formulario__botao {
+        margin-top: 1.5rem;
+    }
+}

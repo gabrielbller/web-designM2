@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabriel's Portfolio</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <script src="https://kit.fontawesome.com/e9e631b38e.js" crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("23f6r5c7f4mdU69Pj");
+    })();
+  </script>
+
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="secao-apresentacao.css" />
+  <link rel="stylesheet" href="secao-sobre.css" />
+  <link rel="stylesheet" href="secao-portfolio.css" />
+  <link rel="stylesheet" href="secao-skills.css" />
+  <link rel="stylesheet" href="secao-experiencia.css" />
+  <link rel="stylesheet" href="secao-educacao.css" />
+  <link rel="stylesheet" href="secao-contato.css" />
+  <link rel="stylesheet" href="cabecalho.css" />
+
+  <script type="module" src="main.js"></script>
+  <script type="module" src="navbar.js"></script>
+  <script type="module" src="portfolio_carrosel.js"></script>
+  <script type="module" src="formulario.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="cabecalho-navbar" class="cabecalho cabecalho-navbar">
+      <ul class="navbar__itens">
+        <li>
+          <a href="#home" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-house cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Home</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-sobre" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-user cabecalho__icone"></i>
+            <label class="texto cabecalho__label">About</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-portfolio" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-toolbox cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Portfolio</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-skills" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-brain cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Skills</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-experiencia" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-user-tie cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Experience</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-educacao" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-user-graduate cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Education</label>
+          </a>
+        </li>
+
+        <li>
+          <a href="#secao-contato" class="cabecalho__botao navbar__item">
+            <i class="fa-solid fa-envelope cabecalho__icone"></i>
+            <label class="texto cabecalho__label">Contact</label>
+          </a>
+        </li>
+      </ul>
+
+      <span class="navbar__espacador navbar__item"></span>
+
+      <button id="cabecalho__hamburguer" value="inactive" class="cabecalho__hamburguer fa-rotate-180">
+        <i class="fa-solid fa-bars cabecalho__icone"></i>
+      </button>
+    </nav>
+  </header>
+
+  <section class="home" id="home">
+    <div class="home__content">
+      <h1>Hi!</h1>
+      <h1>I'm Gabriel Bodenmüller</h1>
+      <h3>Student Full Stack</h3>
+      <p class="home__description">
+        I'm a Brazilian-based web designer and front-end developer, dedicated
+        to creating clean, user-friendly experiences. I'm deeply passionate
+        about developing exceptional software that enhances the lives of those
+        in my community.
+      </p>
+      <div class="home__talk-box">
+        <a href="https://wa.me/554792474767?text=Olá!">Let's Talk</a>
+      </div>
+    </div>
+    <div class="home__capa">
+      <img src="images/fotocapa.jpg" alt="Profile Picture" width="500" />
+    </div>
+    <div class="home__social">
+      <a href="https://github.com/gabrielbller " target="_blank"><i class="bx bxl-github"></i></a>
+      <a href="https://twitter.com/gabrielbller" target="_blank"><i class="bx bxl-twitter"></i></a>
+      <a href="https://www.linkedin.com/in/gabrielbller/" target="_blank"><i class="bx bxl-linkedin"></i></a>
+    </div>
+  </section>
+
+  <section id="secao-sobre" class="secao secao-sobre">
+    <div id="secao-sobre__wrapper" class="secao__wrapper secao-sobre__wrapper">
+      <header class="secao__header">
+        <h2 id="secao-sobre__titulo" class="secao__titulo secao-sobre__titulo">ABOUT <span>ME</span></h2>
+      </header>
+
+      <div id="secao-sobre__conteudo" class="secao__conteudo secao-sobre__conteudo">
+        <div id="secao-sobre__informacao" class="secao-sobre__informacao">
+          <dl id="secao-sobre__lista" class="lista secao-sobre__lista">
+            <dt class="secao-sobre__subtitulo">NAME</dt>
+            <dd class="secao-sobre__topico">GABRIEL BODENMÜLLER</dd>
+
+            <dt class="secao-sobre__subtitulo">AGE</dt>
+            <dd class="secao-sobre__topico">21 YEARS</dd>
+
+            <dt class="secao-sobre__subtitulo">PROFESSION</dt>
+            <dd class="secao-sobre__topico">FULLSTACK DEVELOPER</dd>
+
+            <dt class="secao-sobre__subtitulo">Naturalidade</dt>
+            <dd class="secao-sobre__topico">BLUMENAU/SC</dd>
+
+            <dt class="secao-sobre__subtitulo">NATIONALITY </dt>
+            <dd class="secao-sobre__topico">BRAZILIAN</dd>
+
+            <dt class="secao-sobre__subtitulo">GITHUB</dt>
+            <dd class="secao-sobre__topico">
+              https://github.com/gabrielbller</dd>
+          </dl>
+          <button id="secao-sobre__botao-curriculo" class="botao secao-sobre__botao">
+            <label class="botao__label secao-sobre__label">Download CV</label>
+          </button>
+        </div>
+
+        <figure class="secao-sobre__figura">
+          <img id="secao-sobre__foto" alt="imagem sobre ragnar" class="secao-sobre__foto" src="images/about.png">
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="secao-portfolio" class="secao secao-portfolio">
+    <div id="secao-portfolio__wrapper" class="secao__wrapper secao-portfolio__wrapper">
+      <header class="secao__header secao-portfolio__header">
+        <h2 id="secao-portfolio__titulo" class="secao__titulo secao-portfolio__titulo">PORTFOLIO</h2>
+
+        <ul id="secao-portfolio__cabecalho" class="cabecalho secao-portfolio__cabecalho">
+          <li>
+            <button id="cabecalho__sites" class="cabecalho__botao">
+              <i class="fa-solid fa-code cabecalho__icone"></i>
+              <p class="texto cabecalho__label">Websites</p>
+            </button>
+          </li>
+
+          <li>
+            <button id="cabecalho__palette" class="cabecalho__botao">
+              <i class="fa-solid fa-palette cabecalho__icone"></i>
+              <p class="texto cabecalho__label">Designs</p>
+            </button>
+          </li>
+
+          <li>
+            <button id="cabecalho__camera" class="cabecalho__botao">
+              <i class="fa-solid fa-camera cabecalho__icone"></i>
+              <p class="texto cabecalho__label">Pictures</p>
+            </button>
+          </li>
+        </ul>
+      </header>
+
+      <div id="secao-portfolio__conteudo" class="secao__conteudo secao-portfolio__conteudo">
+        <ul id="secao-portfolio__paginas" class="secao-portfolio__paginas">
+          <param id="numPaginas" name="porfolio-paginas__num-paginas" value=3 />
+
+          <li class="secao-portfolio__pagina">
+            <ul id="secao-portfolio__grid" class="secao__grid secao-portfolio__grid">
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-3.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-2.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-1.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-4.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-6.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-7.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="secao-portfolio__pagina">
+            <ul id="secao-portfolio__grid" class="secao__grid secao-portfolio__grid">
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-3.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-2.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-1.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-4.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-6.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-7.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+            </ul>
+          </li>
+
+          <li class="secao-portfolio__pagina">
+            <ul id="secao-portfolio__grid" class="secao__grid secao-portfolio__grid">
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-3.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-2.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-1.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-4.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-6.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+
+              <li class="secao__grid-item secao-portfolio__grid-item">
+                <figure>
+                  <img class="secao-portfolio__foto" src="images/portfolio-website-7.jpg">
+                </figure>
+
+                <div class="grid-item__overlay secao-portfolio__overlay">
+                  <a href="https://github.com/gabrielbller/gabrielbller.github.io" class="overlay__icone">
+                    <i class="fa-solid fa-link"></i>
+                  </a>
+
+                  <a href="https://github.com/gabrielbller/" class="overlay__icone">
+                    <i class="fa-brands fa-github"></i>
+                  </a>
+
+                </div>
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <button id="secao-portfolio__botao-mais" class="botao secao-portfolio__botao">
+          <label class="botao__label secao-portfolio__label">More</label>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="secao-skills" class="secao secao-skills">
+    <div id="secao-skills__wrapper" class="secao__wrapper secao-skills__wrappper">
+      <header class="secao__header">
+        <h2 id="secao-skills__titulo" class="secao__titulo secao-skills__titulo">Skills</h2>
+      </header>
+
+      <div id="secao-skills__conteudo" class="secao__conteudo secao-skills__conteudo">
+        <ul id="secao-skills__grid" class="secao__grid secao-skills__grid">
+          <li id="secao-skills__grid-item-1" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/html.png" alt="">
+              <figcaption class="texto secao-skills__texto">HTML</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-2" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/css.png" alt="">
+              <figcaption class="texto secao-skills__texto">CSS</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-4" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/csharp.png" alt="">
+              <figcaption class="texto secao-skills__texto">C#</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-3" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/javascript.png" alt="">
+              <figcaption class="texto secao-skills__texto">JavaScript</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-5" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/netcore.png" alt="">
+              <figcaption class="texto secao-skills__texto">.NET Core</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-6" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/ts.png" alt="">
+              <figcaption class="texto secao-skills__texto">TypeScript</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-7" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/react.png" alt="">
+              <figcaption class="texto secao-skills__texto">React</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-8" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/vscode.png" alt="">
+              <figcaption class="texto secao-skills__texto">VS Code</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-9" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/git.png" alt="">
+              <figcaption class="texto secao-skills__texto">GIT</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-10" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/postgresql.png" alt="">
+              <figcaption class="texto secao-skills__texto">Postgres</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-11" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/webpack.png" alt="">
+              <figcaption class="texto secao-skills__texto">Webpack</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-12" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/nginx.png" alt="">
+              <figcaption class="texto secao-skills__texto">Nginx</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-13" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/ubuntu.png" alt="">
+              <figcaption class="texto secao-skills__texto">Ubuntu</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-14" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/aws.png" alt="">
+              <figcaption class="texto secao-skills__texto">AWS</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-15" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/photoshop.png" alt="">
+              <figcaption class="texto secao-skills__texto">Photoshop</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </li>
+
+          <li id="secao-skills__grid-item-16" class="secao__grid-item secao-skills__grid-item">
+            <figure class="secao-skills__figura">
+              <img class="secao-skills__foto" src="images/figma.png" alt="">
+              <figcaption class="texto secao-skills__texto">Figma</figcaption>
+            </figure>
+
+            <div class="secao-skills__estrelas">
+              <i class="fa-solid fa-star"></i>
+            </div>
+
+          </li>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section id="secao-experiencia" class="secao secao-experiencia">
+    <div id="secao-experiencia__wrapper" class="secao__wrapper secao-experiencia__wrappper">
+      <header class="secao__header">
+        <h2 id="secao-experiencia__titulo" class="secao__titulo secao-experiencia__titulo">EXPERIENCE</h2>
+      </header>
+
+      <div id="secao-experiencia__conteudo" class="secao__conteudo secao-experiencia__conteudo">
+        <div id="secao-experiencia__descricao" class="secao-experiencia__descricao">
+          <dl id="secao-experiencia__lista" class="lista secao-experiencia__lista">
+            <div class="lista secao-experiencia__lista-item">
+              <div class="secao-experiencia__data">
+                <i class="fa-regular fa-calendar secao-experiencia__icone"></i>
+                <p>2012 - 2014</p>
+              </div>
+              <dt class="secao-experiencia__subtitulo">Google</dt>
+              <dd class="secao-experiencia__paragrafo">Internship at Google working on the software development team
+                tools for ADS.</dd>
+            </div>
+
+            <div class="lista secao-experiencia__lista-item">
+              <div class="secao-experiencia__data">
+                <i class="fa-regular fa-calendar secao-experiencia__icone"></i>
+                <p>2014 - 2018</p>
+              </div>
+              <dt class="secao-experiencia__subtitulo">Booking</dt>
+              <dd class="secao-experiencia__paragrafo">Junior developer position on the back development team end.</dd>
+            </div>
+
+            <div class="lista secao-experiencia__lista-item">
+              <div class="secao-experiencia__data">
+                <i class="fa-regular fa-calendar secao-experiencia__icone"></i>
+                <p>2018 - 2021</p>
+              </div>
+              <dt class="secao-experiencia__subtitulo">Facebook</dt>
+              <dd class="secao-experiencia__paragrafo">Full developer position on the library creation team React.</dd>
+            </div>
+
+            <div class="lista secao-experiencia__lista-item">
+              <div class="secao-experiencia__data">
+                <i class="fa-regular fa-calendar secao-experiencia__icone"></i>
+                <p>2021 - Still</p>
+              </div>
+              <dt class="secao-experiencia__subtitulo">Twitter</dt>
+              <dd class="secao-experiencia__paragrafo">Senior developer position on the app creation team X.</dd>
+            </div>
+          </dl>
+
+          <div class="secao-experiencia__grid-wrapper">
+            <dl id="secao-experiencia__grid" class="secao__grid secao-experiencia__grid">
+              <div class="secao__grid-item secao-experiencia__grid-item">
+                <dt class="texto grid-item__numero">9</dt>
+                <dd class="texto grid-item__texto">Years of experience</dd>
+              </div>
+
+              <div class="secao__grid-item secao-experiencia__grid-item">
+                <dt class="texto grid-item__numero">16</dt>
+                <dd class="texto grid-item__texto">Individual Projects</dd>
+              </div>
+
+              <div class="secao__grid-item secao-experiencia__grid-item">
+                <dt class="texto grid-item__numero">72</dt>
+                <dd class="texto grid-item__texto">Team Projects</dd>
+              </div>
+
+              <div class="secao__grid-item secao-experiencia__grid-item">
+                <dt class="texto grid-item__numero">87</dt>
+                <dd class="texto grid-item__texto">Specialization Courses</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+
+        <button id="secao-experiencia__botao-mais" class="botao secao-experiencia__botao">
+          <label class="botao__label secao-experiencia__label">More</label>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="secao-educacao" class="secao secao-educacao">
+    <div id="secao-educacao__wrapper" class="secao__wrapper secao-educacao__wrapper">
+      <header class="secao__header">
+        <h2 id="secao-educacao__titulo" class="secao__titulo secao-educacao__titulo">EDUCATION</h2>
+      </header>
+
+      <div class="secao__conteudo secao-educacao__conteudo">
+        <dl id="secao-educacao__lista-graduacao" class="lista secao-educacao__lista">
+          <div class="lista secao-educacao__lista-titulo">
+            <h3>Bachelor and Postgraduate</h3>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2012 - 2016</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">Computer Engineering</dt>
+            <dd class="secao-educacao__paragrafo">Bachelor of Computer Engineering.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2012 - 2016</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">Big Data</dt>
+            <dd class="secao-educacao__paragrafo">Postgraduate in Big Data by UFSC.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2012 - 2016</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">Applied Computing</dt>
+            <dd class="secao-educacao__paragrafo">Master's in Applied Computing by UFSC.</dd>
+          </div>
+        </dl>
+
+        <dl id="secao-educacao__lista-especializacao-1" class="lista secao-educacao__lista">
+          <div class="lista secao-educacao__lista-titulo">
+            <h3>Specialization Courses</h3>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2019 - 2020</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">FrontEnd</dt>
+            <dd class="secao-educacao__paragrafo">Front End course taught by Jackson Camara. Total of 500 hours
+              completed.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2021 - 2022</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">BackEnd</dt>
+            <dd class="secao-educacao__paragrafo">Front End course taught by Jackson Camara. Total of 500 hours
+              completed.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2023 - Still</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">FullStack</dt>
+            <dd class="secao-educacao__paragrafo">Front End course taught by Jackson Camara. Total of 500 hours
+              completed</dd>
+          </div>
+        </dl>
+
+        <dl id="secao-educacao__lista-especializacao-2" class="lista secao-educacao__lista">
+          <div class="lista secao-educacao__lista-titulo">
+            <h3>Specialization Courses</h3>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2017 - 2019</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">English</dt>
+            <dd class="secao-educacao__paragrafo">English Course at UNIVALI Idiomas. Levels A1, A2. B1.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2020 - 2021</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">English</dt>
+            <dd class="secao-educacao__paragrafo">English Course at Wizard. Levels B2, C1.</dd>
+          </div>
+
+          <div class="lista secao-educacao__lista-item">
+            <div class="secao-educacao__data">
+              <i class="fa-regular fa-calendar secao-educacao__icone"></i>
+              <p>2021 - Still</p>
+            </div>
+            <dt class="secao-educacao__subtitulo">English</dt>
+            <dd class="secao-educacao__paragrafo">Private English course. Levels C2.</dd>
+          </div>
+        </dl>
+      </div>
+
+      <button id="secao-educacao__botao-mais" class="botao secao-educacao__botao">
+        <label class="botao__label secao-educacao__label">More</label>
+      </button>
+    </div>
+  </section>
+
+  <section id="secao-contato" class="secao secao-contato">
+    <div id="secao-contato__wrapper" class="secao__wrapper secao-contato__wrapper">
+      <header class="secao__header">
+        <h2 id="secao-contato__titulo" class="secao__titulo secao-contato__titulo">CONTACT</h2>
+      </header>
+
+      <div class="secao__conteudo secao-contato__conteudo">
+        <address class="secao-contato__informacao">
+          <dl class="secao-contato__lista-contatos">
+            <div class="secao-contato__contato">
+              <a class="fa-regular fa-envelope contato__icone"></a>
+              <div class="texto contato__texto">
+                <dt>EMAIL</dt>
+                <a>
+                  <dd>gabrielbller@icloud.com</dd>
+                </a>
+              </div>
+            </div>
+
+            <div class="secao-contato__contato">
+              <a class="fa-solid fa-phone fa-rotate-270 contato__icone"></a>
+              <div class="texto contato__texto">
+                <dt>TELEPHONE</dt>
+                <a>
+                  <dd>47 9 9247-4767</dd>
+                </a>
+              </div>
+            </div>
+
+            <div class="secao-contato__contato">
+              <a href="https://wa.me/554792474767?text=Olá!" class="fa-brands fa-whatsapp contato__icone"></a>
+              <div class="texto contato__texto">
+                <dt>WhatsApp</dt>
+                <a href="https://wa.me/554792474767?text=Olá!">
+                  <dd>47 9 9247-4767</dd>
+                </a>
+              </div>
+            </div>
+
+            <div class="secao-contato__contato">
+              <a href="https://telegram.org/gabrielbller" class="fa-brands fa-telegram contato__icone"></a>
+              <div class="texto contato__texto">
+                <dt>Telegram</dt>
+                <a href="https://telegram.org/gabrielbller">
+                  <dd>47 9 9247-4767</dd>
+                </a>
+              </div>
+            </div>
+
+            <div class="secao-contato__contato">
+              <a href="https://skype.com/gabrielbller" class="fa-brands fa-skype contato__icone"></a>
+              <div class="texto contato__texto">
+                <dt>Skype</dt>
+                <a href="https://skype.com/gabrielbller">
+                  <dd>meuskype</dd>
+                </a>
+              </div>
+            </div>
+          </dl>
+
+          <ul class="secao-contato__lista-redes-sociais">
+            <a href="https://www.linkedin.com/in/gabrielbller/" class="secao-contato__rede-social">
+              <li class="fa-brands fa-linkedin-in"></li>
+            </a>
+
+            <a href="https://twitter.com/gabrielbller" class="secao-contato__rede-social">
+              <li class="fa-brands fa-twitter redes-sociais__icone"></li>
+            </a>
+
+            <a href="https://www.instagram.com/gabrielbller" class="secao-contato__rede-social">
+              <li class="fa-brands fa-instagram redes-sociais__icone"></li>
+            </a>
+
+            <a href="https://www.youtube.com/gabrielbller" class="secao-contato__rede-social">
+              <li class="fa-brands fa-youtube redes-sociais__icone"></li>
+            </a>
+
+            <a href="https://www.facebook.com/gabrielbller" class="secao-contato__rede-social">
+              <li class="fa-brands fa-facebook-f redes-sociais__icone"></li>
+            </a>
+          </ul>
+        </address>
+
+        <form id="secao-contato__formulario" class="secao-contato__formulario">
+          <div class="formulario__lista-itens">
+            <input id="formulario__nome" type="text" name="Nome" placeholder="NAME" required
+              class="texto formulario__item">
+            <input id="formulario__email" type="email" name="Email" placeholder="EMAIL" required
+              class="texto formulario__item">
+            <input id="formulario__telefone" type="tel" name="Telefone" placeholder="TELEPHONE" required
+              class="texto formulario__item">
+            <input id="formulario__assunto" type="text" name="Assunto" placeholder="SUBJECT" required
+              class="texto formulario__item">
+            <textarea id="formulario__mensagem" type="message" name="Mensagem" placeholder="MESSAGE" required
+              class="texto formulario__item formulario__mensagem"></textarea>
+          </div>
+
+          <button id="formulario__botao" type="submit"
+            class="botao texto formulario__botao formulario__botao--enabled">Send</button>
+        </form>
+
+        <div id="formulario__toast" class="texto formulario__toast">
+          Form sent successfully!
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer__text">
+      <p>Copyright &copy; 2024 by GabrieL | All Rights Reserved.</p>
+    </div>
+    <div class="footer__iconTop">
+      <a href="#"><i class="bx bx-up-arrow-alt"></i></a>
+    </div>
+  </footer>
+</body>
+
+</html>

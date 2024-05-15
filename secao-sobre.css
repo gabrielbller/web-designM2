@@ -1,0 +1,141 @@
+.secao-sobre {
+  display: flex;
+  flex-direction: column;
+}
+
+.secao-sobre__wrapper {
+  display: inherit;
+  flex-direction: inherit;
+  width: 90%;
+  height: 80%;
+  top: 15%;
+  left: 10%;
+}
+
+.secao-sobre__conteudo {
+  position: relative;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.secao-sobre__informacao {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.secao-sobre__lista {
+  text-transform: uppercase;
+}
+
+.secao-sobre__titulo {
+  color: white;
+}
+
+.secao-sobre__titulo span {
+  padding-left: 15px;
+  color: #00abf0;
+}
+
+.secao-sobre__subtitulo {
+  color: #00abf0;
+  font-size: clamp(1.5rem, 1.8rem, 1.8vw);
+}
+
+.secao-sobre__topico {
+  font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+  margin-bottom: 2.5vh;
+}
+
+.secao-sobre__figura {
+  width: 50%;
+  align-self: flex-start;
+  display: flex;
+  margin-left: 15vw;
+  justify-content: center;
+}
+
+.secao-sobre__foto {
+  width: 75%;
+}
+
+.secao-sobre__botao {
+  padding-inline: 2rem;
+  padding-block: 1rem;
+  border-radius: 10px;
+  font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+  color: #081b29;
+}
+
+.secao-sobre__botao {
+  font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+  color: #081b29;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.secao-sobre__botao label{
+  color: #081b29;
+  font-style: bold;
+}
+
+.secao-sobre__botao label:hover {
+  color: #00abf0;
+}
+
+.secao-sobre__botao label:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.secao-sobre__botao label:nth-child(2):hover {
+  color: #081b29;
+}
+
+.secao-sobre__botao label:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.secao-sobre__botao label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.secao-sobre__botao label:hover::before {
+  width: 100%;
+}
+
+.secao-sobre__figura {
+  flex: 1;
+  text-align: right;
+  margin-right: 4vw;
+  border-radius: 5vw;
+  width: 10px;
+}
+
+@media (max-width: 1300px) and (orientation: portrait) {
+  .secao-sobre__figura {
+    display: none;
+  }
+
+  .secao-sobre__foto {
+    display: none;
+  }
+}

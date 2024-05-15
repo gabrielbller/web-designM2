@@ -1,0 +1,138 @@
+.secao-educacao {
+  display: flex;
+  flex-direction: column;
+}
+
+.secao-educacao__wrapper {
+  display: inherit;
+  flex-direction: inherit;
+}
+
+.secao-educacao__conteudo {
+  flex-direction: row;
+}
+
+.secao-educacao__lista {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-start;
+  width: 28%;
+  height: 100%;
+}
+
+.secao-educacao__lista-titulo {
+  width: 100%;
+  padding-block: 1rem;
+  background-color: #00abf0;
+  color: white;
+  font-size: clamp(1rem, 1.3rem, 1.3vw);
+  text-align: center;
+  text-transform: uppercase;
+  margin-block: 2rem;
+}
+
+.secao-educacao__lista-item {
+  height: auto;
+}
+
+.secao-educacao__lista-item p{
+  color: #00abf0;
+}
+
+.secao-educacao__data {
+  display: flex;
+  flex-direction: row;
+  font-size: clamp(1rem, 1.4rem, 1.4vw);
+}
+
+.secao-educacao__icone {
+  color: #00abf0;
+  margin-right: 0.5rem;
+}
+
+.secao-educacao__subtitulo {
+  font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+.secao-educacao__paragrafo {
+  font-size: clamp(1rem, 1.2rem, 1.2vw);
+  text-align: start;
+}
+
+.secao-educacao__botao {
+  box-sizing: border-box;
+  margin-top: 3rem;
+  padding-inline: 4.5rem;
+  padding-block: 0.9rem;
+  border-radius: 15px;
+  font-size: clamp(1rem, 1.5rem, 1.5vw);
+  align-self: flex-end;
+  z-index: 1;
+}
+
+.secao-educacao__botao {
+  font-size: clamp(1.2rem, 1.8rem, 1.8vw);
+  color: #081b29;
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #00abf0;
+  border: 2px solid #00abf0;
+  text-decoration: none;
+  z-index: 1;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.secao-educacao__botao label {
+  color: #081b29;
+  font-style: bold;
+}
+
+.secao-educacao__botao label:hover {
+  color: #00abf0;
+}
+
+.secao-educacao__botao label:nth-child(2) {
+  background: transparent;
+  color: #00abf0;
+}
+
+.secao-educacao__botao label:nth-child(2):hover {
+  color: #081b29;
+}
+
+.secao-educacao__botao label:nth-child(2)::before {
+  background: #00abf0;
+}
+
+.secao-educacao__botao label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #081b29;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.secao-educacao__botao label:hover::before {
+  width: 100%;
+}
+
+@media (max-width: 1300px) and (orientation: portrait) {
+  .secao-educacao__conteudo {
+    flex-direction: column;
+  }
+
+  .secao-educacao__lista {
+    width: 100%;
+  }
+}
